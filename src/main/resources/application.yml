@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: user-center-backend
+  # DataSource Config
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/universe
+    username: root
+    password: Gabe0730!!
+  # session 失效时间
+  session:
+    timeout: 86400
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false
+  global-config:
+    db-config:
+      logic-delete-field: isDelete # Global logical deleted entity field name (since 3.3.0, you can ignore step 2 after configuration)
+      logic-delete-value: 1 # Logical deleted value (default is 1)
+      logic-not-delete-value: 0 # logical-not-delete-value (default is 0)

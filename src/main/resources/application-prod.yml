@@ -1,0 +1,11 @@
+spring:
+  # DataSource Config
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: 'jdbc:mysql://watson-database.cht5hsx5hwxt.ca-central-1.rds.amazonaws.com:3306/user_center'
+    username: admin
+    password: Gabe0730
+  # session 失效时间
+  session:
+    timeout: 86400
+
